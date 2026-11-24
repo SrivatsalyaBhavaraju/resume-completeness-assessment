@@ -1,0 +1,82 @@
+{
+    "model": "distilbert/distilbert-base-uncased",
+    "resume_id": 16852973,
+    "resume_category": "HR",
+    "number_of_transformer_layers": 6,
+    "number_of_hidden_state_outputs": 7,
+    "hidden_state_shapes": [
+        [
+            1,
+            512,
+            768
+        ],
+        [
+            1,
+            512,
+            768
+        ],
+        [
+            1,
+            512,
+            768
+        ],
+        [
+            1,
+            512,
+            768
+        ],
+        [
+            1,
+            512,
+            768
+        ],
+        [
+            1,
+            512,
+            768
+        ],
+        [
+            1,
+            512,
+            768
+        ]
+    ],
+    "layer_names": [
+        "Embedding Output",
+        "Transformer Layer 1",
+        "Transformer Layer 2",
+        "Transformer Layer 3",
+        "Transformer Layer 4",
+        "Transformer Layer 5",
+        "Transformer Layer 6"
+    ],
+    "average_vector_norms": [
+        18.63056755065918,
+        18.2331600189209,
+        19.376026153564453,
+        20.123559951782227,
+        22.270648956298828,
+        24.54751968383789,
+        11.498228073120117
+    ],
+    "mean_values": [
+        -0.009337385185062885,
+        -0.03156894072890282,
+        -0.02772744558751583,
+        -0.029622120782732964,
+        -0.03815445303916931,
+        -0.04331846907734871,
+        -0.010322473011910915
+    ],
+    "standard_deviations": [
+        0.6746877431869507,
+        0.6603305339813232,
+        0.699692964553833,
+        0.7259532809257507,
+        0.8032733798027039,
+        0.8907608985900879,
+        0.4174865186214447
+    ],
+    "training_performed": false,
+    "fine_tuning_performed": false
+}

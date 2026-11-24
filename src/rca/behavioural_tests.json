@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Experience - vague one-liner (PPT example)",
+    "text": "Software Developer\nJan 2021 to Present\nInfosys - Bengaluru, Karnataka\nWorked on software development.",
+    "expect": {"exp_thin_description": 1, "exp_no_quantified_impact": 1, "exp_missing_dates": 0, "exp_missing_title": 0}
+  },
+  {
+    "name": "Experience - specific and quantified",
+    "text": "Software Developer\nJan 2021 to Present\nInfosys - Bengaluru, Karnataka\nBuilt a REST API in Python and Flask that serves 20,000 requests per day for the billing team.\nReduced report generation time by 35% by rewriting slow SQL queries and adding indexes.\nMentored 3 junior developers and introduced code reviews and unit testing with PyTest.",
+    "expect": {"exp_thin_description": 0, "exp_no_quantified_impact": 0, "exp_missing_dates": 0, "exp_missing_title": 0}
+  },
+  {
+    "name": "Experience - detailed but no numbers",
+    "text": "Marketing Associate\n06/2017 to 08/2020\nDeloitte - Chicago, IL\nPlanned and executed social media campaigns for retail and healthcare clients.\nWrote weekly performance reports and presented insights to account managers.\nCoordinated with designers and copywriters to deliver campaign assets on schedule.",
+    "expect": {"exp_thin_description": 0, "exp_no_quantified_impact": 1, "exp_missing_dates": 0}
+  },
+  {
+    "name": "Experience - role without dates",
+    "text": "Store Manager\nWalmart - Austin, TX\nManaged a team of 25 associates and oversaw daily store operations and scheduling.\nIncreased quarterly sales by 12% through improved merchandising and staff training.\nHandled inventory control, vendor relations and customer escalations.",
+    "expect": {"exp_missing_dates": 1, "exp_thin_description": 0, "exp_no_quantified_impact": 0}
+  },
+  {
+    "name": "Experience - role without job title",
+    "text": "06/2018 to 05/2020\nWalmart - Austin, TX\nManaged inventory for three departments and reduced stock discrepancies by 15%.\nTrained new employees on point-of-sale systems and customer service standards.\nPrepared weekly sales reports for the store manager.",
+    "expect": {"exp_missing_title": 1, "exp_missing_dates": 0}
+  },
+  {
+    "name": "Education - complete entry",
+    "text": "2025\nBachelor of Technology : Computer Science and Engineering\nChrist University - Bengaluru, Karnataka",
+    "expect": {"edu_missing_degree": 0, "edu_missing_institution": 0, "edu_missing_date": 0}
+  },
+  {
+    "name": "Education - no degree stated",
+    "text": "2025\nChrist University - Bengaluru, Karnataka\nGPA: 8.9 / 10",
+    "expect": {"edu_missing_degree": 1, "edu_missing_institution": 0, "edu_missing_date": 0}
+  },
+  {
+    "name": "Education - no institution",
+    "text": "2016\nBachelor of Science : Nursing\nGraduated with honors",
+    "expect": {"edu_missing_degree": 0, "edu_missing_institution": 1, "edu_missing_date": 0}
+  },
+  {
+    "name": "Education - no date",
+    "text": "Master of Business Administration : Finance\nUniversity of Pittsburgh - Pittsburgh, PA",
+    "expect": {"edu_missing_degree": 0, "edu_missing_institution": 0, "edu_missing_date": 1}
+  },
+  {
+    "name": "Summary - too brief",
+    "text": "Hardworking software engineer.",
+    "expect": {"summary_too_brief": 1}
+  },
+  {
+    "name": "Summary - adequate",
+    "text": "Machine learning engineer with three years of experience building NLP and computer vision systems in production. Skilled in Python, PyTorch and cloud deployment on AWS. Known for turning research prototypes into reliable services and for clear communication with product teams.",
+    "expect": {"summary_too_brief": 0}
+  },
+  {
+    "name": "Skills - too few",
+    "text": "Communication, Teamwork",
+    "expect": {"skills_too_few": 1}
+  },
+  {
+    "name": "Skills - adequate list",
+    "text": "Python, Java, SQL, TensorFlow, PyTorch, Docker, Git, Linux, Data Analysis, REST APIs",
+    "expect": {"skills_too_few": 0}
+  }
+]

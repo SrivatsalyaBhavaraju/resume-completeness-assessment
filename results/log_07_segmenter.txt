@@ -1,0 +1,19 @@
+=================================================================
+SECTION SEGMENTATION EVALUATION (PLAIN TEXT, TEST SPLIT)
+=================================================================
+
+Test resumes: 373
+
+Section          Precision    Recall        F1   Support
+--------------------------------------------------------
+summary              0.985     0.994     0.989       331
+education            1.000     1.000     1.000       371
+experience           1.000     0.995     0.997       373
+skills               1.000     0.992     0.996       371
+certifications       0.906     0.941     0.923        51
+
+Saved: results/segmenter_evaluation.json
+
+=================================================================
+SEGMENTATION EVALUATION COMPLETED
+=================================================================

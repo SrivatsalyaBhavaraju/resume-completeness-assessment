@@ -1,0 +1,38 @@
+=================================================================
+END-TO-END SYSTEM EVALUATION (PLAIN TEXT, TEST RESUMES)
+=================================================================
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  10%|█         | 10/100 [00:00<00:00, 90.95it/s]Loading weights:  20%|██        | 20/100 [00:00<00:01, 42.68it/s]Loading weights:  26%|██▌       | 26/100 [00:00<00:01, 39.76it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 160.78it/s]
+Test resumes: 373 | policy: {'edu_missing_degree': 'model', 'edu_missing_institution': 'or', 'edu_missing_date': 'model', 'exp_missing_dates': 'model', 'exp_missing_title': 'model', 'exp_thin_description': 'or', 'exp_no_quantified_impact': 'rule', 'summary_too_brief': 'rule', 'skills_too_few': 'rule'}
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (674 > 512). Running this sequence through the model will result in indexing errors
+  assessed 50/373 resumes
+  assessed 100/373 resumes
+  assessed 150/373 resumes
+  assessed 200/373 resumes
+  assessed 250/373 resumes
+  assessed 300/373 resumes
+  assessed 350/373 resumes
+
+Section presence   Precision    Recall      F1
+summary                0.994     1.000   0.997
+education              1.000     1.000   1.000
+experience             1.000     0.995   0.997
+skills                 1.000     0.992   0.996
+
+Deficiency label             Precision    Recall      F1  Resumes  Source
+edu_missing_degree               0.537     0.717   0.614      371   model
+edu_missing_institution          0.526     0.637   0.576      371      or
+edu_missing_date                 0.903     0.720   0.801      371   model
+exp_missing_dates                0.350     0.656   0.457      371   model
+exp_missing_title                0.211     0.367   0.268      371   model
+exp_thin_description             0.438     0.629   0.517      371      or
+exp_no_quantified_impact         0.914     0.966   0.939      371    rule
+summary_too_brief                0.778     0.933   0.849      331    rule
+skills_too_few                   0.915     0.860   0.887      368    rule
+
+End-to-end macro-F1: 0.6564
+
+Saved: results/end_to_end_results.json
+
+=================================================================
+END-TO-END EVALUATION COMPLETED
+=================================================================

@@ -1,0 +1,11 @@
+{
+    "Model Name": "distilbert/distilbert-base-uncased",
+    "Model Type": "distilbert",
+    "Number of Transformer Layers": 6,
+    "Number of Attention Heads": 12,
+    "Hidden Dimension": 768,
+    "Feed Forward Dimension": 3072,
+    "Vocabulary Size": 30522,
+    "Maximum Sequence Length": 512,
+    "Number of Labels": 2
+}

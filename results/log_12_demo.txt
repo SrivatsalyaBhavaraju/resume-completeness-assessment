@@ -1,0 +1,62 @@
+=================================================================
+RESUME COMPLETENESS ASSESSMENT
+=================================================================
+Input: D:\LLM CIA\data\input\sample_resume.txt
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 26/100 [00:00<00:00, 256.53it/s]Loading weights:  52%|█████▏    | 52/100 [00:00<00:00, 230.46it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 428.61it/s]
+
+CONTACT DETAILS (rule-based)
+--------------------------------------------------
+  email         : NOT FOUND
+  phone         : NOT FOUND
+  profile_link  : NOT FOUND
+
+SECTIONS DETECTED
+--------------------------------------------------
+
+  [EDUCATION]  heading: EDUCATION:
+    model reads it as: education (confidence 0.98), chunks: 1
+    edu_missing_degree           ok    P(deficiency)=0.01  [decided by model]
+    edu_missing_institution      WEAK  P(deficiency)=0.25  [decided by model OR rule]
+    edu_missing_date             WEAK  P(deficiency)=0.98  [decided by model]
+
+  [SKILLS]  heading: SKILLS:
+    model reads it as: skills (confidence 1.00), chunks: 1
+    skills_too_few               ok    P(deficiency)=0.01  [decided by rule]
+
+  [EXPERIENCE]  heading: EXPERIENCE:
+    model reads it as: summary (confidence 0.94), chunks: 1
+    exp_missing_dates            WEAK  P(deficiency)=0.78  [decided by model]
+    exp_missing_title            WEAK  P(deficiency)=0.60  [decided by model]
+    exp_thin_description         WEAK  P(deficiency)=0.83  [decided by model OR rule]
+    exp_no_quantified_impact     WEAK  P(deficiency)=0.82  [decided by rule]
+
+  [PROJECTS]  heading: PROJECTS:
+    model reads it as: other (confidence 1.00), chunks: 1
+    exp_thin_description         WEAK  P(deficiency)=0.83  [decided by model]
+    exp_no_quantified_impact     WEAK  P(deficiency)=0.85  [decided by model]
+
+  [CERTIFICATIONS]  heading: CERTIFICATIONS:
+    model reads it as: certifications (confidence 0.81), chunks: 1
+
+REQUIRED SECTIONS MISSING: ['summary']
+OPTIONAL SECTIONS MISSING: none
+
+FEEDBACK
+--------------------------------------------------
+  [MISSING   ] contact        Contact information is missing. Add at least an e-mail address and a phone number.
+  [MISSING   ] summary        No summary / profile section found. Add a 2-4 sentence professional summary at the top.
+  [WEAK      ] education      Name the institution (university / college / school) for every education entry.
+  [WEAK      ] education      Add the graduation year (or expected year) for each education entry.
+  [WEAK      ] experience     Add start and end dates (month/year) for every role so the timeline is clear.
+  [WEAK      ] experience     State your job title for every role.
+  [WEAK      ] experience     At least one role is described too briefly. Add 2-4 bullet points describing your responsibilities, the tools you used and what you delivered.
+  [WEAK      ] experience     No measurable results found. Quantify your impact where possible (e.g. 'reduced processing time by 30%', 'managed a team of 6', 'served 200+ customers daily').
+  [WEAK      ] projects       At least one project is described too briefly. Explain what you built, your role, the technologies used and the outcome.
+  [WEAK      ] projects       Quantify project results where possible (e.g. dataset size, accuracy achieved, number of users, speed-up).
+  [SUGGESTION] contact        Optional: add a LinkedIn / GitHub / portfolio link.
+
+Saved: D:\LLM CIA\results\assessment_sample_resume.json
+
+=================================================================
+ASSESSMENT COMPLETED
+=================================================================

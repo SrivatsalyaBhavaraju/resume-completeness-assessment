@@ -1,0 +1,47 @@
+=================================================================
+BASELINES: RULES, TF-IDF, FROZEN DISTILBERT PROBES
+=================================================================
+train units: 11698
+val   units: 2587
+test  units: 2486
+
+[A] Plain-text rules...
+    macro-F1: 0.4968
+
+[B] TF-IDF + logistic regression...
+    macro-F1: 0.3819 | type acc: 0.9268
+
+[C] Extracting frozen DistilBERT features on cuda ...
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 19/100 [00:00<00:00, 142.61it/s]Loading weights:  42%|████▏     | 42/100 [00:00<00:00, 168.04it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 390.64it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert/distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+    feature extraction took 60s
+    cls  Embeddings macro-F1 0.2638 | macro-AUROC 0.5000 | type acc 0.2884
+    cls  Layer 1    macro-F1 0.5017 | macro-AUROC 0.7936 | type acc 0.9220
+    cls  Layer 2    macro-F1 0.5060 | macro-AUROC 0.7971 | type acc 0.9260
+    cls  Layer 3    macro-F1 0.5117 | macro-AUROC 0.8017 | type acc 0.9252
+    cls  Layer 4    macro-F1 0.4967 | macro-AUROC 0.7981 | type acc 0.9268
+    cls  Layer 5    macro-F1 0.4879 | macro-AUROC 0.7895 | type acc 0.9171
+    cls  Layer 6    macro-F1 0.4811 | macro-AUROC 0.7827 | type acc 0.9236
+    mean Embeddings macro-F1 0.4664 | macro-AUROC 0.7705 | type acc 0.8954
+    mean Layer 1    macro-F1 0.4852 | macro-AUROC 0.7717 | type acc 0.9091
+    mean Layer 2    macro-F1 0.4972 | macro-AUROC 0.7927 | type acc 0.9147
+    mean Layer 3    macro-F1 0.5068 | macro-AUROC 0.7973 | type acc 0.9167
+    mean Layer 4    macro-F1 0.4950 | macro-AUROC 0.8042 | type acc 0.9171
+    mean Layer 5    macro-F1 0.5118 | macro-AUROC 0.8144 | type acc 0.9240
+    mean Layer 6    macro-F1 0.5116 | macro-AUROC 0.8015 | type acc 0.9224
+
+Saved: results/baseline_results.json
+
+=================================================================
+BASELINES COMPLETED
+=================================================================

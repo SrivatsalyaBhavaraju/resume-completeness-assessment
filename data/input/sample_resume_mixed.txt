@@ -1,0 +1,28 @@
+RAHUL MENON
+rahul.menon@email.com | +91 99000 45678
+
+SUMMARY
+Hardworking engineer looking for opportunities.
+
+WORK EXPERIENCE
+Software Engineer
+Aug 2021 to Present
+Accenture - Pune, Maharashtra
+- Developed REST APIs in Java and Spring Boot for an insurance claims platform used by 300 agents.
+- Wrote unit and integration tests and fixed production defects reported by the support team.
+- Worked with business analysts to convert requirements into technical tasks every sprint.
+
+Trainee
+Accenture - Pune, Maharashtra
+Worked on software development.
+
+EDUCATION
+Bachelor of Engineering : Information Technology
+2021
+Pune Institute of Computer Technology
+
+Higher Secondary
+Delhi Public School
+
+SKILLS
+Java, Communication

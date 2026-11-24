@@ -1,0 +1,39 @@
+PRIYA RAMAN
+Data Scientist
+priya.raman@email.com | +91 98450 12345 | linkedin.com/in/priyaraman | Bengaluru, Karnataka
+
+PROFESSIONAL SUMMARY
+Data scientist with three years of experience building machine learning and NLP systems for retail and fintech clients. Skilled in Python, PyTorch, SQL and cloud deployment on AWS. Known for turning prototypes into reliable production services and for explaining model results clearly to business teams.
+
+EXPERIENCE
+Data Scientist
+Jun 2022 to Present
+Infosys - Bengaluru, Karnataka
+- Built a demand-forecasting model in Python and LightGBM for 1,200 retail stores, reducing stock-outs by 18%.
+- Deployed a customer-support ticket classifier with DistilBERT on AWS, handling 40,000 tickets per month.
+- Led a team of 4 analysts and introduced code reviews, unit testing and experiment tracking with MLflow.
+
+Machine Learning Intern
+Jan 2021 to May 2022
+Wipro - Hyderabad, Telangana
+- Cleaned and analysed 2 million credit-card transactions to build a fraud-detection baseline in scikit-learn.
+- Improved model recall from 0.71 to 0.83 by engineering time-based features and tuning thresholds.
+- Automated weekly reporting dashboards in Power BI, saving the team about 6 hours per week.
+
+EDUCATION
+2022
+Bachelor of Technology : Computer Science and Engineering
+Christ University - Bengaluru, Karnataka
+CGPA: 8.9 / 10
+
+SKILLS
+Python, SQL, PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, LightGBM, Pandas, AWS, Docker, Git, MLflow, Power BI
+
+PROJECTS
+Resume Completeness Assessment
+- Fine-tuned DistilBERT with a multi-label head to detect missing and weak resume sections, reaching 0.91 macro-AUROC on 373 held-out resumes.
+- Built a hybrid decision layer combining model predictions with rule-based validation and generated section-wise feedback.
+
+CERTIFICATIONS
+AWS Certified Machine Learning - Specialty, Amazon Web Services, 2023
+Deep Learning Specialization, DeepLearning.AI, 2021

@@ -1,0 +1,70 @@
+
+CIA1 COMPONENT 2
+PRE-TRAINED DISTILBERT IMPLEMENTATION RESULTS
+
+1. MODEL DETAILS
+
+Model: distilbert/distilbert-base-uncased
+Architecture: DistilBERT
+Transformer layers: 6
+Attention heads: 12
+Hidden dimension: 768
+Feed-forward dimension: 3072
+Vocabulary size: 30522
+Maximum sequence length: 512
+Total parameters: 66362880
+Trainable parameters before freezing: 66362880
+
+2. DATASET DETAILS
+
+Dataset: Resume.csv
+Selected Resume ID: 16852973
+Resume Category: HR
+
+3. INPUT ENCODING
+
+Input IDs shape: [1, 512]
+Attention mask shape: [1, 512]
+
+4. PRE-TRAINED INFERENCE
+
+Last hidden state shape:
+[1, 512, 768]
+
+CLS embedding shape:
+[1, 768]
+
+Mean-pooled embedding shape:
+[1, 768]
+
+5. TRANSFORMER LAYER ANALYSIS
+
+Number of Transformer layers:
+6
+
+Number of hidden-state outputs:
+7
+
+6. TRAINING STATUS
+
+Training performed: No
+Fine-tuning performed: No
+Original pre-trained weights used: Yes
+Inference mode: Evaluation
+Parameters frozen during inference: Yes
+
+7. CONCLUSION
+
+The original pre-trained DistilBERT model was successfully
+loaded and used to process resume text from Resume.csv.
+
+The resume was tokenized and converted into numerical inputs.
+These inputs were passed through all six Transformer layers.
+
+The model generated contextual representations in the form
+of the last hidden state, CLS embedding and mean-pooled
+embedding.
+
+This implementation demonstrates pre-trained language
+representation without task-specific fine-tuning or
+resume-completeness classification.

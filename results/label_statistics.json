@@ -1,0 +1,223 @@
+{
+    "units_per_split": {
+        "train": 11698,
+        "val": 2587,
+        "test": 2486
+    },
+    "types_per_split": {
+        "train": {
+            "summary": 1567,
+            "skills": 2981,
+            "other": 1755,
+            "experience": 3478,
+            "education": 1723,
+            "certifications": 194
+        },
+        "val": {
+            "summary": 348,
+            "skills": 658,
+            "other": 399,
+            "experience": 758,
+            "education": 370,
+            "certifications": 54
+        },
+        "test": {
+            "summary": 332,
+            "skills": 636,
+            "other": 379,
+            "experience": 717,
+            "education": 371,
+            "certifications": 51
+        }
+    },
+    "labels": {
+        "edu_missing_degree": {
+            "train": {
+                "applicable_units": 1723,
+                "unknown": 4,
+                "positive": 344,
+                "positive_rate": 0.2001
+            },
+            "val": {
+                "applicable_units": 370,
+                "unknown": 0,
+                "positive": 77,
+                "positive_rate": 0.2081
+            },
+            "test": {
+                "applicable_units": 371,
+                "unknown": 0,
+                "positive": 60,
+                "positive_rate": 0.1617
+            }
+        },
+        "edu_missing_institution": {
+            "train": {
+                "applicable_units": 1723,
+                "unknown": 4,
+                "positive": 361,
+                "positive_rate": 0.21
+            },
+            "val": {
+                "applicable_units": 370,
+                "unknown": 0,
+                "positive": 74,
+                "positive_rate": 0.2
+            },
+            "test": {
+                "applicable_units": 371,
+                "unknown": 0,
+                "positive": 80,
+                "positive_rate": 0.2156
+            }
+        },
+        "edu_missing_date": {
+            "train": {
+                "applicable_units": 1723,
+                "unknown": 4,
+                "positive": 752,
+                "positive_rate": 0.4375
+            },
+            "val": {
+                "applicable_units": 370,
+                "unknown": 0,
+                "positive": 159,
+                "positive_rate": 0.4297
+            },
+            "test": {
+                "applicable_units": 371,
+                "unknown": 0,
+                "positive": 168,
+                "positive_rate": 0.4528
+            }
+        },
+        "exp_missing_dates": {
+            "train": {
+                "applicable_units": 3478,
+                "unknown": 14,
+                "positive": 282,
+                "positive_rate": 0.0814
+            },
+            "val": {
+                "applicable_units": 758,
+                "unknown": 3,
+                "positive": 56,
+                "positive_rate": 0.0742
+            },
+            "test": {
+                "applicable_units": 717,
+                "unknown": 1,
+                "positive": 45,
+                "positive_rate": 0.0628
+            }
+        },
+        "exp_missing_title": {
+            "train": {
+                "applicable_units": 3478,
+                "unknown": 14,
+                "positive": 211,
+                "positive_rate": 0.0609
+            },
+            "val": {
+                "applicable_units": 758,
+                "unknown": 3,
+                "positive": 45,
+                "positive_rate": 0.0596
+            },
+            "test": {
+                "applicable_units": 717,
+                "unknown": 1,
+                "positive": 39,
+                "positive_rate": 0.0545
+            }
+        },
+        "exp_thin_description": {
+            "train": {
+                "applicable_units": 3478,
+                "unknown": 0,
+                "positive": 359,
+                "positive_rate": 0.1032
+            },
+            "val": {
+                "applicable_units": 758,
+                "unknown": 0,
+                "positive": 78,
+                "positive_rate": 0.1029
+            },
+            "test": {
+                "applicable_units": 717,
+                "unknown": 0,
+                "positive": 65,
+                "positive_rate": 0.0907
+            }
+        },
+        "exp_no_quantified_impact": {
+            "train": {
+                "applicable_units": 3478,
+                "unknown": 0,
+                "positive": 1120,
+                "positive_rate": 0.322
+            },
+            "val": {
+                "applicable_units": 758,
+                "unknown": 0,
+                "positive": 260,
+                "positive_rate": 0.343
+            },
+            "test": {
+                "applicable_units": 717,
+                "unknown": 0,
+                "positive": 229,
+                "positive_rate": 0.3194
+            }
+        },
+        "summary_too_brief": {
+            "train": {
+                "applicable_units": 1567,
+                "unknown": 0,
+                "positive": 137,
+                "positive_rate": 0.0874
+            },
+            "val": {
+                "applicable_units": 348,
+                "unknown": 0,
+                "positive": 31,
+                "positive_rate": 0.0891
+            },
+            "test": {
+                "applicable_units": 332,
+                "unknown": 0,
+                "positive": 15,
+                "positive_rate": 0.0452
+            }
+        },
+        "skills_too_few": {
+            "train": {
+                "applicable_units": 2981,
+                "unknown": 0,
+                "positive": 271,
+                "positive_rate": 0.0909
+            },
+            "val": {
+                "applicable_units": 658,
+                "unknown": 0,
+                "positive": 65,
+                "positive_rate": 0.0988
+            },
+            "test": {
+                "applicable_units": 636,
+                "unknown": 0,
+                "positive": 55,
+                "positive_rate": 0.0865
+            }
+        }
+    },
+    "token_length": {
+        "mean": 153.89803828036491,
+        "median": 78.0,
+        "p95": 481.0,
+        "max": 4531,
+        "over_510": 254
+    },
+    "sections_split_into_multiple_chunks": 1711
+}

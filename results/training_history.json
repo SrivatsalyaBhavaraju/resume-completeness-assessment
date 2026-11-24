@@ -1,0 +1,51 @@
+{
+    "hparams": {
+        "pooling": "mean",
+        "learning_rate": 3e-05,
+        "weight_decay": 0.01,
+        "epochs": 4,
+        "batch_size": 8,
+        "grad_accumulation": 2,
+        "warmup_ratio": 0.06,
+        "max_grad_norm": 1.0,
+        "dropout": 0.1,
+        "max_length": 512,
+        "mixed_precision": true,
+        "seed": 42
+    },
+    "history": [
+        {
+            "epoch": 1,
+            "train_loss": 0.7597,
+            "val_loss": 0.4348,
+            "val_macro_auroc": 0.851,
+            "val_type_accuracy": 0.9447,
+            "elapsed_min": 2.8
+        },
+        {
+            "epoch": 2,
+            "train_loss": 0.3481,
+            "val_loss": 0.3945,
+            "val_macro_auroc": 0.8908,
+            "val_type_accuracy": 0.949,
+            "elapsed_min": 5.5
+        },
+        {
+            "epoch": 3,
+            "train_loss": 0.2451,
+            "val_loss": 0.4021,
+            "val_macro_auroc": 0.9036,
+            "val_type_accuracy": 0.9497,
+            "elapsed_min": 8.5
+        },
+        {
+            "epoch": 4,
+            "train_loss": 0.1676,
+            "val_loss": 0.4029,
+            "val_macro_auroc": 0.9114,
+            "val_type_accuracy": 0.9505,
+            "elapsed_min": 12.3
+        }
+    ],
+    "best_val_macro_auroc": 0.9114111389475538
+}

@@ -1,0 +1,205 @@
+{
+    "contact": {
+        "email": false,
+        "phone": false,
+        "profile_link": false
+    },
+    "sections": [
+        {
+            "type": "education",
+            "model_type": "education",
+            "model_type_confidence": 0.983,
+            "num_chunks": 1,
+            "labels": {
+                "edu_missing_degree": {
+                    "flagged": false,
+                    "model_probability": 0.011,
+                    "decided_by": "model"
+                },
+                "edu_missing_institution": {
+                    "flagged": true,
+                    "model_probability": 0.248,
+                    "decided_by": "model OR rule"
+                },
+                "edu_missing_date": {
+                    "flagged": true,
+                    "model_probability": 0.983,
+                    "decided_by": "model"
+                }
+            },
+            "heading": "EDUCATION:",
+            "no_heading": false,
+            "preview": "Bachelor of Technology in Computer Science ABC University, Bangalore Graduated in 2025."
+        },
+        {
+            "type": "skills",
+            "model_type": "skills",
+            "model_type_confidence": 0.997,
+            "num_chunks": 1,
+            "labels": {
+                "skills_too_few": {
+                    "flagged": false,
+                    "model_probability": 0.005,
+                    "decided_by": "rule"
+                }
+            },
+            "heading": "SKILLS:",
+            "no_heading": false,
+            "preview": "Python, Java, C++, Machine Learning, Deep Learning, TensorFlow, PyTorch, Natural Language Processing."
+        },
+        {
+            "type": "experience",
+            "model_type": "summary",
+            "model_type_confidence": 0.936,
+            "num_chunks": 1,
+            "labels": {
+                "exp_missing_dates": {
+                    "flagged": true,
+                    "model_probability": 0.78,
+                    "decided_by": "model"
+                },
+                "exp_missing_title": {
+                    "flagged": true,
+                    "model_probability": 0.601,
+                    "decided_by": "model"
+                },
+                "exp_thin_description": {
+                    "flagged": true,
+                    "model_probability": 0.826,
+                    "decided_by": "model OR rule"
+                },
+                "exp_no_quantified_impact": {
+                    "flagged": true,
+                    "model_probability": 0.822,
+                    "decided_by": "rule"
+                }
+            },
+            "heading": "EXPERIENCE:",
+            "no_heading": false,
+            "preview": "Machine Learning Intern at ABC Technologies. Worked on data preprocessing, model development and evaluation for six months."
+        },
+        {
+            "type": "projects",
+            "model_type": "other",
+            "model_type_confidence": 0.996,
+            "num_chunks": 1,
+            "labels": {
+                "exp_thin_description": {
+                    "flagged": true,
+                    "model_probability": 0.831,
+                    "decided_by": "rule (model advisory)"
+                },
+                "exp_no_quantified_impact": {
+                    "flagged": true,
+                    "model_probability": 0.85,
+                    "decided_by": "rule (model advisory)"
+                }
+            },
+            "heading": "PROJECTS:",
+            "no_heading": false,
+            "preview": "Developed a resume analysis system using Natural Language Processing and Transformer-based models."
+        },
+        {
+            "type": "certifications",
+            "model_type": "certifications",
+            "model_type_confidence": 0.805,
+            "num_chunks": 1,
+            "labels": {},
+            "heading": "CERTIFICATIONS:",
+            "no_heading": false,
+            "preview": "Google Data Analytics Certificate. Python Programming Certification."
+        }
+    ],
+    "present": [
+        "certifications",
+        "education",
+        "experience",
+        "projects",
+        "skills"
+    ],
+    "missing_required": [
+        "summary"
+    ],
+    "missing_optional": [],
+    "feedback": [
+        {
+            "section": "contact",
+            "severity": "missing",
+            "message": "Contact information is missing. Add at least an e-mail address and a phone number."
+        },
+        {
+            "section": "contact",
+            "severity": "suggestion",
+            "message": "Optional: add a LinkedIn / GitHub / portfolio link."
+        },
+        {
+            "section": "summary",
+            "severity": "missing",
+            "message": "No summary / profile section found. Add a 2-4 sentence professional summary at the top."
+        },
+        {
+            "section": "education",
+            "severity": "weak",
+            "label": "edu_missing_institution",
+            "confidence": 0.248,
+            "decided_by": "model OR rule",
+            "message": "Name the institution (university / college / school) for every education entry."
+        },
+        {
+            "section": "education",
+            "severity": "weak",
+            "label": "edu_missing_date",
+            "confidence": 0.983,
+            "decided_by": "model",
+            "message": "Add the graduation year (or expected year) for each education entry."
+        },
+        {
+            "section": "experience",
+            "severity": "weak",
+            "label": "exp_missing_dates",
+            "confidence": 0.78,
+            "decided_by": "model",
+            "message": "Add start and end dates (month/year) for every role so the timeline is clear."
+        },
+        {
+            "section": "experience",
+            "severity": "weak",
+            "label": "exp_missing_title",
+            "confidence": 0.601,
+            "decided_by": "model",
+            "message": "State your job title for every role."
+        },
+        {
+            "section": "experience",
+            "severity": "weak",
+            "label": "exp_thin_description",
+            "confidence": 0.826,
+            "decided_by": "model OR rule",
+            "message": "At least one role is described too briefly. Add 2-4 bullet points describing your responsibilities, the tools you used and what you delivered."
+        },
+        {
+            "section": "experience",
+            "severity": "weak",
+            "label": "exp_no_quantified_impact",
+            "confidence": 0.822,
+            "decided_by": "rule",
+            "message": "No measurable results found. Quantify your impact where possible (e.g. 'reduced processing time by 30%', 'managed a team of 6', 'served 200+ customers daily')."
+        },
+        {
+            "section": "projects",
+            "severity": "weak",
+            "label": "exp_thin_description",
+            "confidence": 0.831,
+            "decided_by": "rule (model advisory)",
+            "message": "At least one project is described too briefly. Explain what you built, your role, the technologies used and the outcome."
+        },
+        {
+            "section": "projects",
+            "severity": "weak",
+            "label": "exp_no_quantified_impact",
+            "confidence": 0.85,
+            "decided_by": "rule (model advisory)",
+            "message": "Quantify project results where possible (e.g. dataset size, accuracy achieved, number of users, speed-up)."
+        }
+    ]
+}

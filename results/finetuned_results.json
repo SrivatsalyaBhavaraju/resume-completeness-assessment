@@ -1,0 +1,692 @@
+{
+    "finetuned_chunk_level": {
+        "labels": {
+            "per_label": {
+                "edu_missing_degree": {
+                    "support_units": 371,
+                    "positives": 60,
+                    "precision": 0.5513,
+                    "recall": 0.7167,
+                    "f1": 0.6232,
+                    "auroc": 0.8631
+                },
+                "edu_missing_institution": {
+                    "support_units": 371,
+                    "positives": 80,
+                    "precision": 0.5976,
+                    "recall": 0.6125,
+                    "f1": 0.6049,
+                    "auroc": 0.8399
+                },
+                "edu_missing_date": {
+                    "support_units": 371,
+                    "positives": 168,
+                    "precision": 0.9318,
+                    "recall": 0.7321,
+                    "f1": 0.82,
+                    "auroc": 0.918
+                },
+                "exp_missing_dates": {
+                    "support_units": 716,
+                    "positives": 45,
+                    "precision": 0.5439,
+                    "recall": 0.6889,
+                    "f1": 0.6078,
+                    "auroc": 0.918
+                },
+                "exp_missing_title": {
+                    "support_units": 716,
+                    "positives": 39,
+                    "precision": 0.3704,
+                    "recall": 0.2564,
+                    "f1": 0.303,
+                    "auroc": 0.7815
+                },
+                "exp_thin_description": {
+                    "support_units": 717,
+                    "positives": 65,
+                    "precision": 0.5538,
+                    "recall": 0.5538,
+                    "f1": 0.5538,
+                    "auroc": 0.9168
+                },
+                "exp_no_quantified_impact": {
+                    "support_units": 717,
+                    "positives": 229,
+                    "precision": 0.9702,
+                    "recall": 0.9956,
+                    "f1": 0.9828,
+                    "auroc": 0.9971
+                },
+                "summary_too_brief": {
+                    "support_units": 332,
+                    "positives": 15,
+                    "precision": 0.65,
+                    "recall": 0.8667,
+                    "f1": 0.7429,
+                    "auroc": 0.9903
+                },
+                "skills_too_few": {
+                    "support_units": 636,
+                    "positives": 55,
+                    "precision": 0.7241,
+                    "recall": 0.7636,
+                    "f1": 0.7434,
+                    "auroc": 0.952
+                }
+            },
+            "macro_f1": 0.6646,
+            "macro_auroc": 0.9085
+        },
+        "section_type": {
+            "accuracy": 0.9553,
+            "macro_f1": 0.9091
+        },
+        "thresholds": {
+            "edu_missing_degree": 0.19,
+            "edu_missing_institution": 0.2,
+            "edu_missing_date": 0.67,
+            "exp_missing_dates": 0.13,
+            "exp_missing_title": 0.23,
+            "exp_thin_description": 0.33,
+            "exp_no_quantified_impact": 0.53,
+            "summary_too_brief": 0.34,
+            "skills_too_few": 0.4
+        }
+    },
+    "finetuned_section_level": {
+        "per_label": {
+            "edu_missing_degree": {
+                "support_units": 371,
+                "positives": 60,
+                "precision": 0.5513,
+                "recall": 0.7167,
+                "f1": 0.6232,
+                "auroc": 0.8631
+            },
+            "edu_missing_institution": {
+                "support_units": 371,
+                "positives": 80,
+                "precision": 0.5976,
+                "recall": 0.6125,
+                "f1": 0.6049,
+                "auroc": 0.8399
+            },
+            "edu_missing_date": {
+                "support_units": 371,
+                "positives": 168,
+                "precision": 0.9318,
+                "recall": 0.7321,
+                "f1": 0.82,
+                "auroc": 0.918
+            },
+            "exp_missing_dates": {
+                "support_units": 398,
+                "positives": 35,
+                "precision": 0.5946,
+                "recall": 0.6286,
+                "f1": 0.6111,
+                "auroc": 0.8954
+            },
+            "exp_missing_title": {
+                "support_units": 398,
+                "positives": 32,
+                "precision": 0.4,
+                "recall": 0.3125,
+                "f1": 0.3509,
+                "auroc": 0.7622
+            },
+            "exp_thin_description": {
+                "support_units": 399,
+                "positives": 63,
+                "precision": 0.5781,
+                "recall": 0.5873,
+                "f1": 0.5827,
+                "auroc": 0.8743
+            },
+            "exp_no_quantified_impact": {
+                "support_units": 399,
+                "positives": 94,
+                "precision": 0.9588,
+                "recall": 0.9894,
+                "f1": 0.9738,
+                "auroc": 0.9958
+            },
+            "summary_too_brief": {
+                "support_units": 332,
+                "positives": 15,
+                "precision": 0.65,
+                "recall": 0.8667,
+                "f1": 0.7429,
+                "auroc": 0.9903
+            },
+            "skills_too_few": {
+                "support_units": 636,
+                "positives": 55,
+                "precision": 0.7241,
+                "recall": 0.7636,
+                "f1": 0.7434,
+                "auroc": 0.952
+            }
+        },
+        "macro_f1": 0.6725,
+        "macro_auroc": 0.899
+    },
+    "hybrid": {
+        "labels": {
+            "per_label": {
+                "edu_missing_degree": {
+                    "support_units": 371,
+                    "positives": 60,
+                    "precision": 0.5513,
+                    "recall": 0.7167,
+                    "f1": 0.6232
+                },
+                "edu_missing_institution": {
+                    "support_units": 371,
+                    "positives": 80,
+                    "precision": 0.5795,
+                    "recall": 0.6375,
+                    "f1": 0.6071
+                },
+                "edu_missing_date": {
+                    "support_units": 371,
+                    "positives": 168,
+                    "precision": 0.9318,
+                    "recall": 0.7321,
+                    "f1": 0.82
+                },
+                "exp_missing_dates": {
+                    "support_units": 716,
+                    "positives": 45,
+                    "precision": 0.5439,
+                    "recall": 0.6889,
+                    "f1": 0.6078
+                },
+                "exp_missing_title": {
+                    "support_units": 716,
+                    "positives": 39,
+                    "precision": 0.3704,
+                    "recall": 0.2564,
+                    "f1": 0.303
+                },
+                "exp_thin_description": {
+                    "support_units": 717,
+                    "positives": 65,
+                    "precision": 0.5294,
+                    "recall": 0.5538,
+                    "f1": 0.5414
+                },
+                "exp_no_quantified_impact": {
+                    "support_units": 717,
+                    "positives": 229,
+                    "precision": 0.9869,
+                    "recall": 0.9869,
+                    "f1": 0.9869
+                },
+                "summary_too_brief": {
+                    "support_units": 332,
+                    "positives": 15,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1": 1.0
+                },
+                "skills_too_few": {
+                    "support_units": 636,
+                    "positives": 55,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1": 1.0
+                }
+            },
+            "macro_f1": 0.721
+        },
+        "policy": {
+            "edu_missing_degree": "model",
+            "edu_missing_institution": "or",
+            "edu_missing_date": "model",
+            "exp_missing_dates": "model",
+            "exp_missing_title": "model",
+            "exp_thin_description": "or",
+            "exp_no_quantified_impact": "rule",
+            "summary_too_brief": "rule",
+            "skills_too_few": "rule"
+        }
+    },
+    "decision_policy": {
+        "thresholds": {
+            "edu_missing_degree": 0.19,
+            "edu_missing_institution": 0.2,
+            "edu_missing_date": 0.67,
+            "exp_missing_dates": 0.13,
+            "exp_missing_title": 0.23,
+            "exp_thin_description": 0.33,
+            "exp_no_quantified_impact": 0.53,
+            "summary_too_brief": 0.34,
+            "skills_too_few": 0.4
+        },
+        "source": {
+            "edu_missing_degree": "model",
+            "edu_missing_institution": "or",
+            "edu_missing_date": "model",
+            "exp_missing_dates": "model",
+            "exp_missing_title": "model",
+            "exp_thin_description": "or",
+            "exp_no_quantified_impact": "rule",
+            "summary_too_brief": "rule",
+            "skills_too_few": "rule"
+        },
+        "validation_f1": {
+            "edu_missing_degree": {
+                "model": 0.6709,
+                "rule": 0.125,
+                "and": 0.1176,
+                "or": 0.6391
+            },
+            "edu_missing_institution": {
+                "model": 0.5548,
+                "rule": 0.0759,
+                "and": 0.0526,
+                "or": 0.557
+            },
+            "edu_missing_date": {
+                "model": 0.8151,
+                "rule": 0.5611,
+                "and": 0.5611,
+                "or": 0.8151
+            },
+            "exp_missing_dates": {
+                "model": 0.7287,
+                "rule": 0.3529,
+                "and": 0.3529,
+                "or": 0.7287
+            },
+            "exp_missing_title": {
+                "model": 0.4675,
+                "rule": 0.2535,
+                "and": 0.2692,
+                "or": 0.4167
+            },
+            "exp_thin_description": {
+                "model": 0.6849,
+                "rule": 0.3711,
+                "and": 0.3579,
+                "or": 0.6892
+            },
+            "exp_no_quantified_impact": {
+                "model": 0.9809,
+                "rule": 0.9922,
+                "and": 0.9883,
+                "or": 0.9848
+            },
+            "summary_too_brief": {
+                "model": 0.8852,
+                "rule": 1.0,
+                "and": 0.931,
+                "or": 0.9538
+            },
+            "skills_too_few": {
+                "model": 0.7642,
+                "rule": 1.0,
+                "and": 0.8393,
+                "or": 0.922
+            }
+        }
+    },
+    "section_type_confusion": {
+        "order": [
+            "summary",
+            "education",
+            "experience",
+            "skills",
+            "certifications",
+            "other"
+        ],
+        "matrix": [
+            [
+                319,
+                0,
+                0,
+                8,
+                0,
+                5
+            ],
+            [
+                0,
+                369,
+                0,
+                1,
+                1,
+                0
+            ],
+            [
+                0,
+                0,
+                713,
+                1,
+                0,
+                3
+            ],
+            [
+                17,
+                0,
+                1,
+                598,
+                6,
+                14
+            ],
+            [
+                1,
+                0,
+                0,
+                9,
+                32,
+                9
+            ],
+            [
+                13,
+                4,
+                0,
+                13,
+                5,
+                344
+            ]
+        ]
+    },
+    "behavioural_tests": {
+        "model_passed": 30,
+        "rule_passed": 31,
+        "total_checks": 32,
+        "cases": [
+            {
+                "name": "Experience - vague one-liner (PPT example)",
+                "checks": [
+                    {
+                        "label": "exp_thin_description",
+                        "expected": 1,
+                        "model": 1,
+                        "model_probability": 0.848,
+                        "rule": 1
+                    },
+                    {
+                        "label": "exp_no_quantified_impact",
+                        "expected": 1,
+                        "model": 1,
+                        "model_probability": 0.992,
+                        "rule": 1
+                    },
+                    {
+                        "label": "exp_missing_dates",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.041,
+                        "rule": 0
+                    },
+                    {
+                        "label": "exp_missing_title",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.113,
+                        "rule": 0
+                    }
+                ]
+            },
+            {
+                "name": "Experience - specific and quantified",
+                "checks": [
+                    {
+                        "label": "exp_thin_description",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.061,
+                        "rule": 0
+                    },
+                    {
+                        "label": "exp_no_quantified_impact",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.008,
+                        "rule": 0
+                    },
+                    {
+                        "label": "exp_missing_dates",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.103,
+                        "rule": 0
+                    },
+                    {
+                        "label": "exp_missing_title",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.04,
+                        "rule": 0
+                    }
+                ]
+            },
+            {
+                "name": "Experience - detailed but no numbers",
+                "checks": [
+                    {
+                        "label": "exp_thin_description",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.037,
+                        "rule": 0
+                    },
+                    {
+                        "label": "exp_no_quantified_impact",
+                        "expected": 1,
+                        "model": 1,
+                        "model_probability": 0.988,
+                        "rule": 1
+                    },
+                    {
+                        "label": "exp_missing_dates",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.004,
+                        "rule": 0
+                    }
+                ]
+            },
+            {
+                "name": "Experience - role without dates",
+                "checks": [
+                    {
+                        "label": "exp_missing_dates",
+                        "expected": 1,
+                        "model": 1,
+                        "model_probability": 0.866,
+                        "rule": 1
+                    },
+                    {
+                        "label": "exp_thin_description",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.234,
+                        "rule": 0
+                    },
+                    {
+                        "label": "exp_no_quantified_impact",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.049,
+                        "rule": 0
+                    }
+                ]
+            },
+            {
+                "name": "Experience - role without job title",
+                "checks": [
+                    {
+                        "label": "exp_missing_title",
+                        "expected": 1,
+                        "model": 0,
+                        "model_probability": 0.072,
+                        "rule": 0
+                    },
+                    {
+                        "label": "exp_missing_dates",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.012,
+                        "rule": 0
+                    }
+                ]
+            },
+            {
+                "name": "Education - complete entry",
+                "checks": [
+                    {
+                        "label": "edu_missing_degree",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.007,
+                        "rule": 0
+                    },
+                    {
+                        "label": "edu_missing_institution",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.012,
+                        "rule": 0
+                    },
+                    {
+                        "label": "edu_missing_date",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.255,
+                        "rule": 0
+                    }
+                ]
+            },
+            {
+                "name": "Education - no degree stated",
+                "checks": [
+                    {
+                        "label": "edu_missing_degree",
+                        "expected": 1,
+                        "model": 1,
+                        "model_probability": 0.881,
+                        "rule": 1
+                    },
+                    {
+                        "label": "edu_missing_institution",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.014,
+                        "rule": 0
+                    },
+                    {
+                        "label": "edu_missing_date",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.085,
+                        "rule": 0
+                    }
+                ]
+            },
+            {
+                "name": "Education - no institution",
+                "checks": [
+                    {
+                        "label": "edu_missing_degree",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.006,
+                        "rule": 0
+                    },
+                    {
+                        "label": "edu_missing_institution",
+                        "expected": 1,
+                        "model": 0,
+                        "model_probability": 0.183,
+                        "rule": 1
+                    },
+                    {
+                        "label": "edu_missing_date",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.014,
+                        "rule": 0
+                    }
+                ]
+            },
+            {
+                "name": "Education - no date",
+                "checks": [
+                    {
+                        "label": "edu_missing_degree",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.002,
+                        "rule": 0
+                    },
+                    {
+                        "label": "edu_missing_institution",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.072,
+                        "rule": 0
+                    },
+                    {
+                        "label": "edu_missing_date",
+                        "expected": 1,
+                        "model": 1,
+                        "model_probability": 0.971,
+                        "rule": 1
+                    }
+                ]
+            },
+            {
+                "name": "Summary - too brief",
+                "checks": [
+                    {
+                        "label": "summary_too_brief",
+                        "expected": 1,
+                        "model": 1,
+                        "model_probability": 0.997,
+                        "rule": 1
+                    }
+                ]
+            },
+            {
+                "name": "Summary - adequate",
+                "checks": [
+                    {
+                        "label": "summary_too_brief",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.001,
+                        "rule": 0
+                    }
+                ]
+            },
+            {
+                "name": "Skills - too few",
+                "checks": [
+                    {
+                        "label": "skills_too_few",
+                        "expected": 1,
+                        "model": 1,
+                        "model_probability": 0.995,
+                        "rule": 1
+                    }
+                ]
+            },
+            {
+                "name": "Skills - adequate list",
+                "checks": [
+                    {
+                        "label": "skills_too_few",
+                        "expected": 0,
+                        "model": 0,
+                        "model_probability": 0.002,
+                        "rule": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+=================================================================
+FINE-TUNING DISTILBERT FOR SECTION COMPLETENESS
+=================================================================
+Device: cuda NVIDIA GeForce RTX 2050
+Train units: 11698 | Val units: 2587
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  17%|█▋        | 17/100 [00:00<00:00, 157.58it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 600.62it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert/distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Trainable parameters: 66,374,415 (full fine-tuning: encoder + both heads)
+D:\LLM CIA\src\09_finetune_distilbert.py:178: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  scheduler.step()
+  epoch 1 step 200/1463 train loss 1.9465
+  epoch 1 step 400/1463 train loss 1.3567
+  epoch 1 step 600/1463 train loss 1.1218
+  epoch 1 step 800/1463 train loss 0.9802
+  epoch 1 step 1000/1463 train loss 0.8865
+  epoch 1 step 1200/1463 train loss 0.8284
+  epoch 1 step 1400/1463 train loss 0.7745
+Epoch 1: {'epoch': 1, 'train_loss': 0.7597, 'val_loss': 0.4348, 'val_macro_auroc': 0.851, 'val_type_accuracy': 0.9447, 'elapsed_min': 2.8}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.28s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.28s/it]
+  -> new best model saved (val macro-AUROC 0.8510)
+  epoch 2 step 200/1463 train loss 0.3747
+  epoch 2 step 400/1463 train loss 0.3589
+  epoch 2 step 600/1463 train loss 0.3582
+  epoch 2 step 800/1463 train loss 0.3620
+  epoch 2 step 1000/1463 train loss 0.3575
+  epoch 2 step 1200/1463 train loss 0.3542
+  epoch 2 step 1400/1463 train loss 0.3482
+Epoch 2: {'epoch': 2, 'train_loss': 0.3481, 'val_loss': 0.3945, 'val_macro_auroc': 0.8908, 'val_type_accuracy': 0.949, 'elapsed_min': 5.5}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.27s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.27s/it]
+  -> new best model saved (val macro-AUROC 0.8908)
+  epoch 3 step 200/1463 train loss 0.2448
+  epoch 3 step 400/1463 train loss 0.2518
+  epoch 3 step 600/1463 train loss 0.2511
+  epoch 3 step 800/1463 train loss 0.2453
+  epoch 3 step 1000/1463 train loss 0.2466
+  epoch 3 step 1200/1463 train loss 0.2460
+  epoch 3 step 1400/1463 train loss 0.2447
+Epoch 3: {'epoch': 3, 'train_loss': 0.2451, 'val_loss': 0.4021, 'val_macro_auroc': 0.9036, 'val_type_accuracy': 0.9497, 'elapsed_min': 8.5}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.16it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.16it/s]
+  -> new best model saved (val macro-AUROC 0.9036)
+  epoch 4 step 200/1463 train loss 0.1702
+  epoch 4 step 400/1463 train loss 0.1724
+  epoch 4 step 600/1463 train loss 0.1760
+  epoch 4 step 800/1463 train loss 0.1729
+  epoch 4 step 1000/1463 train loss 0.1714
+  epoch 4 step 1200/1463 train loss 0.1669
+  epoch 4 step 1400/1463 train loss 0.1669
+Epoch 4: {'epoch': 4, 'train_loss': 0.1676, 'val_loss': 0.4029, 'val_macro_auroc': 0.9114, 'val_type_accuracy': 0.9505, 'elapsed_min': 12.3}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.20it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.20it/s]
+  -> new best model saved (val macro-AUROC 0.9114)
+
+Saved: models/distilbert_rca/, results/training_history.json, results/training_curves.png
+
+=================================================================
+FINE-TUNING COMPLETED
+=================================================================

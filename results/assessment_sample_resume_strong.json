@@ -1,0 +1,140 @@
+{
+    "contact": {
+        "email": true,
+        "phone": true,
+        "profile_link": true
+    },
+    "sections": [
+        {
+            "type": "summary",
+            "model_type": "summary",
+            "model_type_confidence": 0.992,
+            "num_chunks": 1,
+            "labels": {
+                "summary_too_brief": {
+                    "flagged": false,
+                    "model_probability": 0.001,
+                    "decided_by": "rule"
+                }
+            },
+            "heading": "PROFESSIONAL SUMMARY",
+            "no_heading": false,
+            "preview": "Data scientist with three years of experience building machine learning and NLP systems for retail and fintech clients. Skilled in Python, PyTorch, SQL and clou"
+        },
+        {
+            "type": "experience",
+            "model_type": "experience",
+            "model_type_confidence": 0.999,
+            "num_chunks": 1,
+            "labels": {
+                "exp_missing_dates": {
+                    "flagged": false,
+                    "model_probability": 0.07,
+                    "decided_by": "model"
+                },
+                "exp_missing_title": {
+                    "flagged": false,
+                    "model_probability": 0.058,
+                    "decided_by": "model"
+                },
+                "exp_thin_description": {
+                    "flagged": false,
+                    "model_probability": 0.061,
+                    "decided_by": "model OR rule"
+                },
+                "exp_no_quantified_impact": {
+                    "flagged": false,
+                    "model_probability": 0.003,
+                    "decided_by": "rule"
+                }
+            },
+            "heading": "EXPERIENCE",
+            "no_heading": false,
+            "preview": "Data Scientist Jun 2022 to Present Infosys - Bengaluru, Karnataka - Built a demand-forecasting model in Python and LightGBM for 1,200 retail stores, reducing st"
+        },
+        {
+            "type": "education",
+            "model_type": "education",
+            "model_type_confidence": 0.998,
+            "num_chunks": 1,
+            "labels": {
+                "edu_missing_degree": {
+                    "flagged": false,
+                    "model_probability": 0.007,
+                    "decided_by": "model"
+                },
+                "edu_missing_institution": {
+                    "flagged": false,
+                    "model_probability": 0.031,
+                    "decided_by": "model OR rule"
+                },
+                "edu_missing_date": {
+                    "flagged": false,
+                    "model_probability": 0.134,
+                    "decided_by": "model"
+                }
+            },
+            "heading": "EDUCATION",
+            "no_heading": false,
+            "preview": "2022 Bachelor of Technology : Computer Science and Engineering Christ University - Bengaluru, Karnataka CGPA: 8.9 / 10"
+        },
+        {
+            "type": "skills",
+            "model_type": "skills",
+            "model_type_confidence": 0.992,
+            "num_chunks": 1,
+            "labels": {
+                "skills_too_few": {
+                    "flagged": false,
+                    "model_probability": 0.002,
+                    "decided_by": "rule"
+                }
+            },
+            "heading": "SKILLS",
+            "no_heading": false,
+            "preview": "Python, SQL, PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, LightGBM, Pandas, AWS, Docker, Git, MLflow, Power BI"
+        },
+        {
+            "type": "projects",
+            "model_type": "other",
+            "model_type_confidence": 0.971,
+            "num_chunks": 1,
+            "labels": {
+                "exp_thin_description": {
+                    "flagged": false,
+                    "model_probability": 0.618,
+                    "decided_by": "rule (model advisory)"
+                },
+                "exp_no_quantified_impact": {
+                    "flagged": false,
+                    "model_probability": 0.636,
+                    "decided_by": "rule (model advisory)"
+                }
+            },
+            "heading": "PROJECTS",
+            "no_heading": false,
+            "preview": "Resume Completeness Assessment - Fine-tuned DistilBERT with a multi-label head to detect missing and weak resume sections, reaching 0.91 macro-AUROC on 373 held"
+        },
+        {
+            "type": "certifications",
+            "model_type": "certifications",
+            "model_type_confidence": 0.857,
+            "num_chunks": 1,
+            "labels": {},
+            "heading": "CERTIFICATIONS",
+            "no_heading": false,
+            "preview": "AWS Certified Machine Learning - Specialty, Amazon Web Services, 2023 Deep Learning Specialization, DeepLearning.AI, 2021"
+        }
+    ],
+    "present": [
+        "certifications",
+        "education",
+        "experience",
+        "projects",
+        "skills",
+        "summary"
+    ],
+    "missing_required": [],
+    "missing_optional": [],
+    "feedback": []
+}

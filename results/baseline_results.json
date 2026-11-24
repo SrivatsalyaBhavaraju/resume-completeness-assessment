@@ -1,0 +1,1503 @@
+{
+    "rules": {
+        "labels": {
+            "per_label": {
+                "edu_missing_degree": {
+                    "support_units": 371,
+                    "positives": 60,
+                    "precision": 0.3333,
+                    "recall": 0.05,
+                    "f1": 0.087
+                },
+                "edu_missing_institution": {
+                    "support_units": 371,
+                    "positives": 80,
+                    "precision": 0.5833,
+                    "recall": 0.0875,
+                    "f1": 0.1522
+                },
+                "edu_missing_date": {
+                    "support_units": 371,
+                    "positives": 168,
+                    "precision": 0.9853,
+                    "recall": 0.3988,
+                    "f1": 0.5678
+                },
+                "exp_missing_dates": {
+                    "support_units": 716,
+                    "positives": 45,
+                    "precision": 1.0,
+                    "recall": 0.1333,
+                    "f1": 0.2353
+                },
+                "exp_missing_title": {
+                    "support_units": 716,
+                    "positives": 39,
+                    "precision": 0.4,
+                    "recall": 0.1026,
+                    "f1": 0.1633
+                },
+                "exp_thin_description": {
+                    "support_units": 717,
+                    "positives": 65,
+                    "precision": 0.7857,
+                    "recall": 0.1692,
+                    "f1": 0.2785
+                },
+                "exp_no_quantified_impact": {
+                    "support_units": 717,
+                    "positives": 229,
+                    "precision": 0.9869,
+                    "recall": 0.9869,
+                    "f1": 0.9869
+                },
+                "summary_too_brief": {
+                    "support_units": 332,
+                    "positives": 15,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1": 1.0
+                },
+                "skills_too_few": {
+                    "support_units": 636,
+                    "positives": 55,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1": 1.0
+                }
+            },
+            "macro_f1": 0.4968
+        }
+    },
+    "tfidf_logreg": {
+        "labels": {
+            "per_label": {
+                "edu_missing_degree": {
+                    "support_units": 371,
+                    "positives": 60,
+                    "precision": 0.2532,
+                    "recall": 0.6667,
+                    "f1": 0.367,
+                    "auroc": 0.6945
+                },
+                "edu_missing_institution": {
+                    "support_units": 371,
+                    "positives": 80,
+                    "precision": 0.3711,
+                    "recall": 0.45,
+                    "f1": 0.4068,
+                    "auroc": 0.7311
+                },
+                "edu_missing_date": {
+                    "support_units": 371,
+                    "positives": 168,
+                    "precision": 0.5207,
+                    "recall": 0.6726,
+                    "f1": 0.587,
+                    "auroc": 0.6572
+                },
+                "exp_missing_dates": {
+                    "support_units": 716,
+                    "positives": 45,
+                    "precision": 0.0806,
+                    "recall": 0.1111,
+                    "f1": 0.0935,
+                    "auroc": 0.6269
+                },
+                "exp_missing_title": {
+                    "support_units": 716,
+                    "positives": 39,
+                    "precision": 0.75,
+                    "recall": 0.0769,
+                    "f1": 0.1395,
+                    "auroc": 0.6151
+                },
+                "exp_thin_description": {
+                    "support_units": 717,
+                    "positives": 65,
+                    "precision": 0.4286,
+                    "recall": 0.5077,
+                    "f1": 0.4648,
+                    "auroc": 0.8026
+                },
+                "exp_no_quantified_impact": {
+                    "support_units": 717,
+                    "positives": 229,
+                    "precision": 0.5349,
+                    "recall": 0.8035,
+                    "f1": 0.6422,
+                    "auroc": 0.8319
+                },
+                "summary_too_brief": {
+                    "support_units": 332,
+                    "positives": 15,
+                    "precision": 0.375,
+                    "recall": 0.4,
+                    "f1": 0.3871,
+                    "auroc": 0.9428
+                },
+                "skills_too_few": {
+                    "support_units": 636,
+                    "positives": 55,
+                    "precision": 0.2766,
+                    "recall": 0.4727,
+                    "f1": 0.349,
+                    "auroc": 0.8315
+                }
+            },
+            "macro_f1": 0.3819,
+            "macro_auroc": 0.7482
+        },
+        "section_type": {
+            "accuracy": 0.9268,
+            "macro_f1": 0.8531
+        },
+        "thresholds": [
+            0.19,
+            0.24,
+            0.41,
+            0.1,
+            0.13,
+            0.16,
+            0.3,
+            0.14,
+            0.14
+        ]
+    },
+    "frozen_probe": {
+        "cls": {
+            "Embeddings": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.1617,
+                            "recall": 1.0,
+                            "f1": 0.2784,
+                            "auroc": 0.5
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.2156,
+                            "recall": 1.0,
+                            "f1": 0.3548,
+                            "auroc": 0.5
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.4528,
+                            "recall": 1.0,
+                            "f1": 0.6234,
+                            "auroc": 0.5
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.0628,
+                            "recall": 1.0,
+                            "f1": 0.1183,
+                            "auroc": 0.5
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.0545,
+                            "recall": 1.0,
+                            "f1": 0.1033,
+                            "auroc": 0.5
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.0907,
+                            "recall": 1.0,
+                            "f1": 0.1662,
+                            "auroc": 0.5
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.3194,
+                            "recall": 1.0,
+                            "f1": 0.4841,
+                            "auroc": 0.5
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.0452,
+                            "recall": 1.0,
+                            "f1": 0.0865,
+                            "auroc": 0.5
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.0865,
+                            "recall": 1.0,
+                            "f1": 0.1592,
+                            "auroc": 0.5
+                        }
+                    },
+                    "macro_f1": 0.2638,
+                    "macro_auroc": 0.5
+                },
+                "section_type": {
+                    "accuracy": 0.2884,
+                    "macro_f1": 0.0746
+                },
+                "thresholds": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    0.05,
+                    0.05,
+                    0.05,
+                    0.05,
+                    0.05,
+                    0.05
+                ]
+            },
+            "Layer 1": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.3301,
+                            "recall": 0.5667,
+                            "f1": 0.4172,
+                            "auroc": 0.7156
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.4149,
+                            "recall": 0.4875,
+                            "f1": 0.4483,
+                            "auroc": 0.7075
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.6132,
+                            "recall": 0.7738,
+                            "f1": 0.6842,
+                            "auroc": 0.771
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.1792,
+                            "recall": 0.4222,
+                            "f1": 0.2517,
+                            "auroc": 0.7302
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.2174,
+                            "recall": 0.1282,
+                            "f1": 0.1613,
+                            "auroc": 0.6486
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.5,
+                            "recall": 0.2308,
+                            "f1": 0.3158,
+                            "auroc": 0.7627
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.5981,
+                            "recall": 0.8384,
+                            "f1": 0.6982,
+                            "auroc": 0.8752
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 1.0,
+                            "recall": 0.8,
+                            "f1": 0.8889,
+                            "auroc": 0.9968
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.6129,
+                            "recall": 0.6909,
+                            "f1": 0.6496,
+                            "auroc": 0.935
+                        }
+                    },
+                    "macro_f1": 0.5017,
+                    "macro_auroc": 0.7936
+                },
+                "section_type": {
+                    "accuracy": 0.922,
+                    "macro_f1": 0.8653
+                },
+                "thresholds": [
+                    0.24,
+                    0.26,
+                    0.22,
+                    0.14,
+                    0.39,
+                    0.71,
+                    0.25,
+                    0.7,
+                    0.5
+                ]
+            },
+            "Layer 2": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.2807,
+                            "recall": 0.5333,
+                            "f1": 0.3678,
+                            "auroc": 0.6914
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.3049,
+                            "recall": 0.625,
+                            "f1": 0.4098,
+                            "auroc": 0.6757
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.6737,
+                            "recall": 0.7619,
+                            "f1": 0.7151,
+                            "auroc": 0.8121
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.2245,
+                            "recall": 0.2444,
+                            "f1": 0.234,
+                            "auroc": 0.6895
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.141,
+                            "recall": 0.2821,
+                            "f1": 0.188,
+                            "auroc": 0.6789
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.5882,
+                            "recall": 0.3077,
+                            "f1": 0.404,
+                            "auroc": 0.7957
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.662,
+                            "recall": 0.8297,
+                            "f1": 0.7364,
+                            "auroc": 0.8925
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.6522,
+                            "recall": 1.0,
+                            "f1": 0.7895,
+                            "auroc": 0.9973
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.7091,
+                            "recall": 0.7091,
+                            "f1": 0.7091,
+                            "auroc": 0.9408
+                        }
+                    },
+                    "macro_f1": 0.506,
+                    "macro_auroc": 0.7971
+                },
+                "section_type": {
+                    "accuracy": 0.926,
+                    "macro_f1": 0.8593
+                },
+                "thresholds": [
+                    0.16,
+                    0.05,
+                    0.26,
+                    0.28,
+                    0.12,
+                    0.68,
+                    0.23,
+                    0.06,
+                    0.52
+                ]
+            },
+            "Layer 3": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.3407,
+                            "recall": 0.5167,
+                            "f1": 0.4106,
+                            "auroc": 0.6838
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.4312,
+                            "recall": 0.5875,
+                            "f1": 0.4974,
+                            "auroc": 0.7463
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.6769,
+                            "recall": 0.7857,
+                            "f1": 0.7273,
+                            "auroc": 0.8152
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.3488,
+                            "recall": 0.3333,
+                            "f1": 0.3409,
+                            "auroc": 0.783
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.1143,
+                            "recall": 0.2051,
+                            "f1": 0.1468,
+                            "auroc": 0.6483
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.5357,
+                            "recall": 0.2308,
+                            "f1": 0.3226,
+                            "auroc": 0.7378
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.6404,
+                            "recall": 0.8166,
+                            "f1": 0.7179,
+                            "auroc": 0.8866
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.8571,
+                            "recall": 0.8,
+                            "f1": 0.8276,
+                            "auroc": 0.9882
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.5417,
+                            "recall": 0.7091,
+                            "f1": 0.6142,
+                            "auroc": 0.9263
+                        }
+                    },
+                    "macro_f1": 0.5117,
+                    "macro_auroc": 0.8017
+                },
+                "section_type": {
+                    "accuracy": 0.9252,
+                    "macro_f1": 0.8638
+                },
+                "thresholds": [
+                    0.16,
+                    0.23,
+                    0.33,
+                    0.45,
+                    0.13,
+                    0.71,
+                    0.21,
+                    0.77,
+                    0.21
+                ]
+            },
+            "Layer 4": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.3077,
+                            "recall": 0.5333,
+                            "f1": 0.3902,
+                            "auroc": 0.6822
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.3857,
+                            "recall": 0.675,
+                            "f1": 0.4909,
+                            "auroc": 0.7487
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.6793,
+                            "recall": 0.744,
+                            "f1": 0.7102,
+                            "auroc": 0.815
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.3659,
+                            "recall": 0.3333,
+                            "f1": 0.3488,
+                            "auroc": 0.7725
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.2609,
+                            "recall": 0.1538,
+                            "f1": 0.1935,
+                            "auroc": 0.6163
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.4474,
+                            "recall": 0.2615,
+                            "f1": 0.3301,
+                            "auroc": 0.7843
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.6373,
+                            "recall": 0.821,
+                            "f1": 0.7176,
+                            "auroc": 0.8704
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.5652,
+                            "recall": 0.8667,
+                            "f1": 0.6842,
+                            "auroc": 0.9804
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.5625,
+                            "recall": 0.6545,
+                            "f1": 0.605,
+                            "auroc": 0.9133
+                        }
+                    },
+                    "macro_f1": 0.4967,
+                    "macro_auroc": 0.7981
+                },
+                "section_type": {
+                    "accuracy": 0.9268,
+                    "macro_f1": 0.869
+                },
+                "thresholds": [
+                    0.13,
+                    0.08,
+                    0.41,
+                    0.49,
+                    0.8,
+                    0.68,
+                    0.23,
+                    0.14,
+                    0.46
+                ]
+            },
+            "Layer 5": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.3113,
+                            "recall": 0.55,
+                            "f1": 0.3976,
+                            "auroc": 0.6977
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.4632,
+                            "recall": 0.55,
+                            "f1": 0.5029,
+                            "auroc": 0.7586
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.7178,
+                            "recall": 0.6964,
+                            "f1": 0.7069,
+                            "auroc": 0.8303
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.4545,
+                            "recall": 0.3333,
+                            "f1": 0.3846,
+                            "auroc": 0.7195
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.1562,
+                            "recall": 0.1282,
+                            "f1": 0.1408,
+                            "auroc": 0.6652
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.2697,
+                            "recall": 0.3692,
+                            "f1": 0.3117,
+                            "auroc": 0.7009
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.5796,
+                            "recall": 0.8428,
+                            "f1": 0.6868,
+                            "auroc": 0.8641
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.5417,
+                            "recall": 0.8667,
+                            "f1": 0.6667,
+                            "auroc": 0.9821
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.5556,
+                            "recall": 0.6364,
+                            "f1": 0.5932,
+                            "auroc": 0.8867
+                        }
+                    },
+                    "macro_f1": 0.4879,
+                    "macro_auroc": 0.7895
+                },
+                "section_type": {
+                    "accuracy": 0.9171,
+                    "macro_f1": 0.8557
+                },
+                "thresholds": [
+                    0.12,
+                    0.19,
+                    0.48,
+                    0.64,
+                    0.57,
+                    0.27,
+                    0.13,
+                    0.14,
+                    0.41
+                ]
+            },
+            "Layer 6": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.3721,
+                            "recall": 0.5333,
+                            "f1": 0.4384,
+                            "auroc": 0.7105
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.3462,
+                            "recall": 0.5625,
+                            "f1": 0.4286,
+                            "auroc": 0.717
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.7029,
+                            "recall": 0.7321,
+                            "f1": 0.7172,
+                            "auroc": 0.8125
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.1789,
+                            "recall": 0.4889,
+                            "f1": 0.2619,
+                            "auroc": 0.7243
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.3125,
+                            "recall": 0.1282,
+                            "f1": 0.1818,
+                            "auroc": 0.6205
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.2708,
+                            "recall": 0.4,
+                            "f1": 0.323,
+                            "auroc": 0.7099
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.6237,
+                            "recall": 0.7817,
+                            "f1": 0.6938,
+                            "auroc": 0.8563
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.6316,
+                            "recall": 0.8,
+                            "f1": 0.7059,
+                            "auroc": 0.9813
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.5593,
+                            "recall": 0.6,
+                            "f1": 0.5789,
+                            "auroc": 0.9124
+                        }
+                    },
+                    "macro_f1": 0.4811,
+                    "macro_auroc": 0.7827
+                },
+                "section_type": {
+                    "accuracy": 0.9236,
+                    "macro_f1": 0.8705
+                },
+                "thresholds": [
+                    0.24,
+                    0.07,
+                    0.47,
+                    0.07,
+                    0.93,
+                    0.27,
+                    0.25,
+                    0.27,
+                    0.44
+                ]
+            }
+        },
+        "mean": {
+            "Embeddings": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.3333,
+                            "recall": 0.55,
+                            "f1": 0.4151,
+                            "auroc": 0.7144
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.4032,
+                            "recall": 0.3125,
+                            "f1": 0.3521,
+                            "auroc": 0.6707
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.5521,
+                            "recall": 0.8512,
+                            "f1": 0.6698,
+                            "auroc": 0.7543
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.0909,
+                            "recall": 0.1111,
+                            "f1": 0.1,
+                            "auroc": 0.6744
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.1127,
+                            "recall": 0.2051,
+                            "f1": 0.1455,
+                            "auroc": 0.5786
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.3929,
+                            "recall": 0.1692,
+                            "f1": 0.2366,
+                            "auroc": 0.7179
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.6912,
+                            "recall": 0.821,
+                            "f1": 0.7505,
+                            "auroc": 0.9201
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.9333,
+                            "recall": 0.9333,
+                            "f1": 0.9333,
+                            "auroc": 0.9989
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.5455,
+                            "recall": 0.6545,
+                            "f1": 0.595,
+                            "auroc": 0.9054
+                        }
+                    },
+                    "macro_f1": 0.4664,
+                    "macro_auroc": 0.7705
+                },
+                "section_type": {
+                    "accuracy": 0.8954,
+                    "macro_f1": 0.8304
+                },
+                "thresholds": [
+                    0.19,
+                    0.8,
+                    0.05,
+                    0.58,
+                    0.13,
+                    0.93,
+                    0.21,
+                    0.47,
+                    0.19
+                ]
+            },
+            "Layer 1": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.2385,
+                            "recall": 0.5167,
+                            "f1": 0.3263,
+                            "auroc": 0.6863
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.3889,
+                            "recall": 0.525,
+                            "f1": 0.4468,
+                            "auroc": 0.69
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.6224,
+                            "recall": 0.7262,
+                            "f1": 0.6703,
+                            "auroc": 0.7751
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.175,
+                            "recall": 0.1556,
+                            "f1": 0.1647,
+                            "auroc": 0.6484
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.1667,
+                            "recall": 0.0769,
+                            "f1": 0.1053,
+                            "auroc": 0.6047
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.3902,
+                            "recall": 0.2462,
+                            "f1": 0.3019,
+                            "auroc": 0.7029
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.7053,
+                            "recall": 0.8777,
+                            "f1": 0.7821,
+                            "auroc": 0.9198
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.9286,
+                            "recall": 0.8667,
+                            "f1": 0.8966,
+                            "auroc": 0.9983
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.6923,
+                            "recall": 0.6545,
+                            "f1": 0.6729,
+                            "auroc": 0.9196
+                        }
+                    },
+                    "macro_f1": 0.4852,
+                    "macro_auroc": 0.7717
+                },
+                "section_type": {
+                    "accuracy": 0.9091,
+                    "macro_f1": 0.8441
+                },
+                "thresholds": [
+                    0.05,
+                    0.16,
+                    0.32,
+                    0.58,
+                    0.67,
+                    0.72,
+                    0.18,
+                    0.4,
+                    0.82
+                ]
+            },
+            "Layer 2": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.3548,
+                            "recall": 0.55,
+                            "f1": 0.4314,
+                            "auroc": 0.751
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.338,
+                            "recall": 0.6,
+                            "f1": 0.4324,
+                            "auroc": 0.7082
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.7081,
+                            "recall": 0.6786,
+                            "f1": 0.693,
+                            "auroc": 0.8049
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.1714,
+                            "recall": 0.1333,
+                            "f1": 0.15,
+                            "auroc": 0.69
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.1538,
+                            "recall": 0.0513,
+                            "f1": 0.0769,
+                            "auroc": 0.56
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.386,
+                            "recall": 0.3385,
+                            "f1": 0.3607,
+                            "auroc": 0.7499
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.7581,
+                            "recall": 0.821,
+                            "f1": 0.7883,
+                            "auroc": 0.9383
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.8235,
+                            "recall": 0.9333,
+                            "f1": 0.875,
+                            "auroc": 0.9983
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.7,
+                            "recall": 0.6364,
+                            "f1": 0.6667,
+                            "auroc": 0.9339
+                        }
+                    },
+                    "macro_f1": 0.4972,
+                    "macro_auroc": 0.7927
+                },
+                "section_type": {
+                    "accuracy": 0.9147,
+                    "macro_f1": 0.8434
+                },
+                "thresholds": [
+                    0.15,
+                    0.05,
+                    0.6,
+                    0.54,
+                    0.87,
+                    0.65,
+                    0.37,
+                    0.18,
+                    0.81
+                ]
+            },
+            "Layer 3": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.3837,
+                            "recall": 0.55,
+                            "f1": 0.4521,
+                            "auroc": 0.7483
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.46,
+                            "recall": 0.2875,
+                            "f1": 0.3538,
+                            "auroc": 0.7193
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.7041,
+                            "recall": 0.7083,
+                            "f1": 0.7062,
+                            "auroc": 0.8269
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.2812,
+                            "recall": 0.2,
+                            "f1": 0.2338,
+                            "auroc": 0.7325
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.1,
+                            "recall": 0.1282,
+                            "f1": 0.1124,
+                            "auroc": 0.5402
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.4348,
+                            "recall": 0.3077,
+                            "f1": 0.3604,
+                            "auroc": 0.7463
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.8085,
+                            "recall": 0.8297,
+                            "f1": 0.819,
+                            "auroc": 0.9359
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.875,
+                            "recall": 0.9333,
+                            "f1": 0.9032,
+                            "auroc": 0.9981
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.5405,
+                            "recall": 0.7273,
+                            "f1": 0.6202,
+                            "auroc": 0.9281
+                        }
+                    },
+                    "macro_f1": 0.5068,
+                    "macro_auroc": 0.7973
+                },
+                "section_type": {
+                    "accuracy": 0.9167,
+                    "macro_f1": 0.8581
+                },
+                "thresholds": [
+                    0.19,
+                    0.79,
+                    0.54,
+                    0.73,
+                    0.35,
+                    0.54,
+                    0.48,
+                    0.37,
+                    0.16
+                ]
+            },
+            "Layer 4": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.4677,
+                            "recall": 0.4833,
+                            "f1": 0.4754,
+                            "auroc": 0.7626
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.475,
+                            "recall": 0.475,
+                            "f1": 0.475,
+                            "auroc": 0.7557
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.6805,
+                            "recall": 0.6845,
+                            "f1": 0.6825,
+                            "auroc": 0.8001
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.193,
+                            "recall": 0.2444,
+                            "f1": 0.2157,
+                            "auroc": 0.7396
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.0909,
+                            "recall": 0.2308,
+                            "f1": 0.1304,
+                            "auroc": 0.5899
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.4634,
+                            "recall": 0.2923,
+                            "f1": 0.3585,
+                            "auroc": 0.7371
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.7519,
+                            "recall": 0.8603,
+                            "f1": 0.8024,
+                            "auroc": 0.9359
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.5833,
+                            "recall": 0.9333,
+                            "f1": 0.7179,
+                            "auroc": 0.9968
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.5362,
+                            "recall": 0.6727,
+                            "f1": 0.5968,
+                            "auroc": 0.92
+                        }
+                    },
+                    "macro_f1": 0.495,
+                    "macro_auroc": 0.8042
+                },
+                "section_type": {
+                    "accuracy": 0.9171,
+                    "macro_f1": 0.8544
+                },
+                "thresholds": [
+                    0.53,
+                    0.27,
+                    0.42,
+                    0.33,
+                    0.1,
+                    0.54,
+                    0.2,
+                    0.14,
+                    0.19
+                ]
+            },
+            "Layer 5": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.4,
+                            "recall": 0.5333,
+                            "f1": 0.4571,
+                            "auroc": 0.7809
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.5,
+                            "recall": 0.4875,
+                            "f1": 0.4937,
+                            "auroc": 0.7696
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.7134,
+                            "recall": 0.6667,
+                            "f1": 0.6892,
+                            "auroc": 0.8125
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.2206,
+                            "recall": 0.3333,
+                            "f1": 0.2655,
+                            "auroc": 0.7425
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.0813,
+                            "recall": 0.2564,
+                            "f1": 0.1235,
+                            "auroc": 0.6142
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.4107,
+                            "recall": 0.3538,
+                            "f1": 0.3802,
+                            "auroc": 0.7647
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.7348,
+                            "recall": 0.8472,
+                            "f1": 0.787,
+                            "auroc": 0.933
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.8125,
+                            "recall": 0.8667,
+                            "f1": 0.8387,
+                            "auroc": 0.9971
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.5312,
+                            "recall": 0.6182,
+                            "f1": 0.5714,
+                            "auroc": 0.9152
+                        }
+                    },
+                    "macro_f1": 0.5118,
+                    "macro_auroc": 0.8144
+                },
+                "section_type": {
+                    "accuracy": 0.924,
+                    "macro_f1": 0.8672
+                },
+                "thresholds": [
+                    0.37,
+                    0.35,
+                    0.7,
+                    0.38,
+                    0.08,
+                    0.47,
+                    0.22,
+                    0.5,
+                    0.22
+                ]
+            },
+            "Layer 6": {
+                "labels": {
+                    "per_label": {
+                        "edu_missing_degree": {
+                            "support_units": 371,
+                            "positives": 60,
+                            "precision": 0.383,
+                            "recall": 0.6,
+                            "f1": 0.4675,
+                            "auroc": 0.7436
+                        },
+                        "edu_missing_institution": {
+                            "support_units": 371,
+                            "positives": 80,
+                            "precision": 0.5,
+                            "recall": 0.35,
+                            "f1": 0.4118,
+                            "auroc": 0.7378
+                        },
+                        "edu_missing_date": {
+                            "support_units": 371,
+                            "positives": 168,
+                            "precision": 0.691,
+                            "recall": 0.7321,
+                            "f1": 0.711,
+                            "auroc": 0.8038
+                        },
+                        "exp_missing_dates": {
+                            "support_units": 716,
+                            "positives": 45,
+                            "precision": 0.2895,
+                            "recall": 0.2444,
+                            "f1": 0.2651,
+                            "auroc": 0.7414
+                        },
+                        "exp_missing_title": {
+                            "support_units": 716,
+                            "positives": 39,
+                            "precision": 0.1268,
+                            "recall": 0.2308,
+                            "f1": 0.1636,
+                            "auroc": 0.5976
+                        },
+                        "exp_thin_description": {
+                            "support_units": 717,
+                            "positives": 65,
+                            "precision": 0.4583,
+                            "recall": 0.3385,
+                            "f1": 0.3894,
+                            "auroc": 0.7619
+                        },
+                        "exp_no_quantified_impact": {
+                            "support_units": 717,
+                            "positives": 229,
+                            "precision": 0.7347,
+                            "recall": 0.786,
+                            "f1": 0.7595,
+                            "auroc": 0.9231
+                        },
+                        "summary_too_brief": {
+                            "support_units": 332,
+                            "positives": 15,
+                            "precision": 0.7778,
+                            "recall": 0.9333,
+                            "f1": 0.8485,
+                            "auroc": 0.995
+                        },
+                        "skills_too_few": {
+                            "support_units": 636,
+                            "positives": 55,
+                            "precision": 0.6383,
+                            "recall": 0.5455,
+                            "f1": 0.5882,
+                            "auroc": 0.9092
+                        }
+                    },
+                    "macro_f1": 0.5116,
+                    "macro_auroc": 0.8015
+                },
+                "section_type": {
+                    "accuracy": 0.9224,
+                    "macro_f1": 0.8557
+                },
+                "thresholds": [
+                    0.3,
+                    0.62,
+                    0.41,
+                    0.56,
+                    0.18,
+                    0.45,
+                    0.3,
+                    0.56,
+                    0.66
+                ]
+            }
+        }
+    }
+}

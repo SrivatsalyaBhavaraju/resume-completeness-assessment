@@ -1,0 +1,150 @@
+{
+    "contact": {
+        "email": true,
+        "phone": true,
+        "profile_link": false
+    },
+    "sections": [
+        {
+            "type": "summary",
+            "model_type": "summary",
+            "model_type_confidence": 0.974,
+            "num_chunks": 1,
+            "labels": {
+                "summary_too_brief": {
+                    "flagged": true,
+                    "model_probability": 0.997,
+                    "decided_by": "rule"
+                }
+            },
+            "heading": "SUMMARY",
+            "no_heading": false,
+            "preview": "Hardworking engineer looking for opportunities."
+        },
+        {
+            "type": "experience",
+            "model_type": "experience",
+            "model_type_confidence": 0.998,
+            "num_chunks": 1,
+            "labels": {
+                "exp_missing_dates": {
+                    "flagged": false,
+                    "model_probability": 0.055,
+                    "decided_by": "model"
+                },
+                "exp_missing_title": {
+                    "flagged": false,
+                    "model_probability": 0.023,
+                    "decided_by": "model"
+                },
+                "exp_thin_description": {
+                    "flagged": false,
+                    "model_probability": 0.095,
+                    "decided_by": "model OR rule"
+                },
+                "exp_no_quantified_impact": {
+                    "flagged": false,
+                    "model_probability": 0.004,
+                    "decided_by": "rule"
+                }
+            },
+            "heading": "WORK EXPERIENCE",
+            "no_heading": false,
+            "preview": "Software Engineer Aug 2021 to Present Accenture - Pune, Maharashtra - Developed REST APIs in Java and Spring Boot for an insurance claims platform used by 300 a"
+        },
+        {
+            "type": "education",
+            "model_type": "education",
+            "model_type_confidence": 0.995,
+            "num_chunks": 1,
+            "labels": {
+                "edu_missing_degree": {
+                    "flagged": false,
+                    "model_probability": 0.009,
+                    "decided_by": "model"
+                },
+                "edu_missing_institution": {
+                    "flagged": false,
+                    "model_probability": 0.019,
+                    "decided_by": "model OR rule"
+                },
+                "edu_missing_date": {
+                    "flagged": true,
+                    "model_probability": 0.954,
+                    "decided_by": "model"
+                }
+            },
+            "heading": "EDUCATION",
+            "no_heading": false,
+            "preview": "Bachelor of Engineering : Information Technology 2021 Pune Institute of Computer Technology  Higher Secondary Delhi Public School"
+        },
+        {
+            "type": "skills",
+            "model_type": "skills",
+            "model_type_confidence": 0.979,
+            "num_chunks": 1,
+            "labels": {
+                "skills_too_few": {
+                    "flagged": true,
+                    "model_probability": 0.996,
+                    "decided_by": "rule"
+                }
+            },
+            "heading": "SKILLS",
+            "no_heading": false,
+            "preview": "Java, Communication"
+        }
+    ],
+    "present": [
+        "education",
+        "experience",
+        "skills",
+        "summary"
+    ],
+    "missing_required": [],
+    "missing_optional": [
+        "projects",
+        "certifications"
+    ],
+    "feedback": [
+        {
+            "section": "contact",
+            "severity": "suggestion",
+            "message": "Optional: add a LinkedIn / GitHub / portfolio link."
+        },
+        {
+            "section": "summary",
+            "severity": "weak",
+            "label": "summary_too_brief",
+            "confidence": 0.997,
+            "decided_by": "rule",
+            "message": "Your summary is very short. Expand it to 2-4 sentences covering your role, years of experience, core skills and what you are looking for."
+        },
+        {
+            "section": "education",
+            "severity": "weak",
+            "label": "edu_missing_date",
+            "confidence": 0.954,
+            "decided_by": "model",
+            "message": "Add the graduation year (or expected year) for each education entry."
+        },
+        {
+            "section": "skills",
+            "severity": "weak",
+            "label": "skills_too_few",
+            "confidence": 0.996,
+            "decided_by": "rule",
+            "message": "List more specific skills (aim for at least 5-10), including tools, technologies and domain skills, not only soft skills."
+        },
+        {
+            "section": "projects",
+            "severity": "suggestion",
+            "message": "Optional: consider adding a Projects section describing what you built, the technologies used and the outcome (especially valuable for students and early-career candidates)."
+        },
+        {
+            "section": "certifications",
+            "severity": "suggestion",
+            "message": "Optional: add relevant certifications (name, issuing body, year) if you have any."
+        }
+    ]
+}

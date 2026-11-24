@@ -1,0 +1,99 @@
+{
+    "presence": {
+        "summary": {
+            "precision": 0.994,
+            "recall": 1.0,
+            "f1": 0.997
+        },
+        "education": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "experience": {
+            "precision": 1.0,
+            "recall": 0.9946,
+            "f1": 0.9973
+        },
+        "skills": {
+            "precision": 1.0,
+            "recall": 0.9919,
+            "f1": 0.9959
+        }
+    },
+    "labels": {
+        "edu_missing_degree": {
+            "precision": 0.5375,
+            "recall": 0.7167,
+            "f1": 0.6143,
+            "resumes": 371,
+            "positives": 60,
+            "decided_by": "model"
+        },
+        "edu_missing_institution": {
+            "precision": 0.5258,
+            "recall": 0.6375,
+            "f1": 0.5763,
+            "resumes": 371,
+            "positives": 80,
+            "decided_by": "or"
+        },
+        "edu_missing_date": {
+            "precision": 0.903,
+            "recall": 0.7202,
+            "f1": 0.8013,
+            "resumes": 371,
+            "positives": 168,
+            "decided_by": "model"
+        },
+        "exp_missing_dates": {
+            "precision": 0.35,
+            "recall": 0.6562,
+            "f1": 0.4565,
+            "resumes": 371,
+            "positives": 32,
+            "decided_by": "model"
+        },
+        "exp_missing_title": {
+            "precision": 0.2115,
+            "recall": 0.3667,
+            "f1": 0.2683,
+            "resumes": 371,
+            "positives": 30,
+            "decided_by": "model"
+        },
+        "exp_thin_description": {
+            "precision": 0.4382,
+            "recall": 0.629,
+            "f1": 0.5166,
+            "resumes": 371,
+            "positives": 62,
+            "decided_by": "or"
+        },
+        "exp_no_quantified_impact": {
+            "precision": 0.914,
+            "recall": 0.9659,
+            "f1": 0.9392,
+            "resumes": 371,
+            "positives": 88,
+            "decided_by": "rule"
+        },
+        "summary_too_brief": {
+            "precision": 0.7778,
+            "recall": 0.9333,
+            "f1": 0.8485,
+            "resumes": 331,
+            "positives": 15,
+            "decided_by": "rule"
+        },
+        "skills_too_few": {
+            "precision": 0.9149,
+            "recall": 0.86,
+            "f1": 0.8866,
+            "resumes": 368,
+            "positives": 50,
+            "decided_by": "rule"
+        }
+    },
+    "macro_f1": 0.6564
+}
